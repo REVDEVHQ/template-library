@@ -4,22 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Seattle’s Trusted House Painters | Premium Interior & Exterior Painting</title>
-  <meta name="description" content="Premium house painters in Seattle specializing in interior painting, exterior painting, cabinet refinishing, and whole-home transformations. Smooth finishes, clean prep, and unmatched quality.">
-  <link rel="canonical" href="https://www.seattlepaintingpros.com/">
+  <title>Seattle Painting Experts | Interior & Exterior Painters</title>
+  <meta name="description" content="Premium interior and exterior painting for Seattle homes. Clean prep, smooth finishes, and long-lasting quality. Serving Seattle, Bellevue & Everett. Free estimates.">
+  <link rel="canonical" href="https://yourpaintingwebsite.com/">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Schema -->
+  <meta name="geo.region" content="US-WA">
+  <meta name="geo.placename" content="Seattle">
+  <meta name="geo.position" content="47.6062;-122.3321">
+  <meta name="ICBM" content="47.6062, -122.3321">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
-    "name": "Seattle Painting Pros",
-    "image": "/images/hero-painting.jpg",
+    "name": "Seattle Painting Experts",
+    "image": "/images/painter-hero.jpg",
     "telephone": "+12065550199",
     "address": {
       "@type": "PostalAddress",
@@ -27,8 +31,8 @@
       "addressRegion": "WA",
       "addressCountry": "US"
     },
-    "url": "https://www.seattlepaintingpros.com/",
-    "areaServed": ["Seattle", "Bellevue", "Everett", "Redmond", "Kirkland"]
+    "url": "https://yourpaintingwebsite.com/",
+    "areaServed": ["Seattle", "Bellevue", "Everett"]
   }
   </script>
 
@@ -36,15 +40,12 @@
     :root {
       --primary: #d63031;
       --primary-dark: #c92a2a;
-      --accent: #4abbcb;
       --bg-dark: #1e272e;
       --bg-soft: #f8f9fa;
       --text-main: #2d3436;
       --text-muted: #636e72;
       --radius-md: 10px;
-      --radius-lg: 14px;
       --shadow-soft: 0 4px 20px rgba(0,0,0,0.06);
-      --shadow-hover: 0 12px 30px rgba(0,0,0,0.12);
 
       --title-font: 'Montserrat', sans-serif;
       --body-font: 'Open Sans', sans-serif;
@@ -52,14 +53,21 @@
       --max-width: 1200px;
     }
 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: var(--body-font);
       color: var(--text-main);
-      background: #fff;
-      line-height: 1.7;
+      background: #ffffff;
+      line-height: 1.6;
     }
 
-    img { max-width: 100%; border-radius: 8px; }
+    a { text-decoration: none; color: inherit; }
+    img { width: 100%; display: block; }
 
     .wrap {
       max-width: var(--max-width);
@@ -67,8 +75,21 @@
       padding: 0 24px;
     }
 
-    .section { padding: 90px 0; }
+    .section { padding: 80px 0; }
     .section-bg { background: var(--bg-soft); }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+      align-items: center;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
 
     /* HEADER */
     .header {
@@ -76,13 +97,13 @@
       border-bottom: 1px solid #eceff1;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 50;
     }
 
     .header-inner {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 18px 24px;
+      padding: 16px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -93,446 +114,363 @@
       font-weight: 800;
       font-size: 22px;
       color: var(--primary);
-      letter-spacing: -0.03em;
-      text-transform: uppercase;
+      letter-spacing: -0.04em;
     }
 
     .nav {
       display: flex;
       gap: 28px;
-      font-size: 15px;
       font-weight: 600;
-    }
-
-    .nav a:hover {
-      color: var(--primary);
+      font-size: 14px;
+      position: relative;
     }
 
     .nav-cta {
+      padding: 10px 18px;
       background: var(--primary);
       color: #fff;
-      padding: 10px 18px;
       border-radius: 999px;
       font-weight: 700;
     }
 
     /* HERO */
     .hero {
-      background: linear-gradient(135deg, #1e272e, #2d3436);
+      background: radial-gradient(circle at top left, #3e4a52, #1e272e 60%);
       color: #fff;
-      padding: 110px 0 90px;
+      padding: 90px 0 70px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.1fr 1fr;
-      gap: 50px;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
       align-items: center;
     }
 
     .hero-title {
       font-family: var(--title-font);
-      font-size: 46px;
-      font-weight: 800;
-      letter-spacing: -0.04em;
-      margin-bottom: 16px;
-      line-height: 1.1;
+      font-size: 42px;
+      line-height: 1.15;
+      margin-bottom: 18px;
     }
 
     .hero-sub {
-      font-size: 18px;
-      color: rgba(255,255,255,0.92);
-      margin-bottom: 28px;
+      font-size: 17px;
+      opacity: 0.92;
+      margin-bottom: 18px;
     }
 
-    .hero-ctas { display: flex; gap: 16px; margin-bottom: 20px; }
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
 
     .btn {
-      padding: 16px 28px;
+      padding: 14px 26px;
       border-radius: 999px;
-      font-size: 16px;
       font-weight: 700;
-      cursor: pointer;
+      font-size: 15px;
       display: inline-flex;
       align-items: center;
-      transition: 0.2s ease;
+      cursor: pointer;
+      transition: 0.2s ease-out;
     }
 
     .btn-primary {
       background: var(--primary);
       color: #fff;
-      box-shadow: 0 14px 28px rgba(0,0,0,0.3);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.35);
     }
 
-    .btn-primary:hover { background: var(--primary-dark); }
-
     .btn-outline {
-      border: 1px solid rgba(255,255,255,0.5);
+      border: 1px solid rgba(255,255,255,0.3);
       color: #fff;
     }
 
-    .btn-outline:hover {
-      background: #fff;
-      color: var(--bg-dark);
-    }
-
-    /* TRUST BAR */
     .trust-strip {
       background: #fff;
-      padding: 18px 22px;
-      border-radius: var(--radius-md);
       box-shadow: var(--shadow-soft);
+      padding: 16px 22px;
+      border-radius: var(--radius-md);
+      margin-top: 22px;
       display: flex;
-      gap: 35px;
-      color: var(--text-main);
-      margin-top: 18px;
-      font-size: 15px;
       justify-content: space-between;
+      font-size: 14px;
+      color: var(--text-main);
     }
 
-    .trust-item strong {
-      font-family: var(--title-font);
-      font-size: 26px;
-      color: var(--primary);
-    }
-
-    /* SERVICES */
-    h2.section-title {
-      font-family: var(--title-font);
-      font-size: 36px;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 10px;
-    }
-
-    p.section-sub {
-      font-size: 16px;
-      color: var(--text-muted);
-      margin-bottom: 40px;
-      max-width: 650px;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 32px;
-    }
-
+    /* CARDS */
     .card {
       background: #fff;
-      padding: 28px;
       border-radius: var(--radius-md);
       box-shadow: var(--shadow-soft);
-      transition: 0.2s;
+      padding: 26px 22px;
     }
-
-    .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
 
     .card-title {
       font-family: var(--title-font);
-      font-size: 22px;
-      font-weight: 700;
-      margin-bottom: 8px;
+      font-size: 20px;
+      margin-bottom: 6px;
     }
 
     .card-sub {
+      font-size: 14px;
       color: var(--text-muted);
-      font-size: 15px;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     .card ul li {
-      margin-bottom: 8px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid #edf0f2;
+      padding: 6px 0;
     }
 
     /* PROCESS */
     .process-list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
+      gap: 20px;
     }
 
     .process-step {
       background: #fff;
+      padding: 18px 16px;
       border-radius: var(--radius-md);
-      padding: 20px;
-      border: 1px solid #e8e8e8;
+      border: 1px solid #eceff1;
     }
 
     /* GALLERY */
     .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(4,1fr);
-      gap: 12px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
     }
 
     /* TESTIMONIALS */
     .testimonial-grid {
       display: grid;
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 24px;
-    }
-
-    .testimonial {
-      background: #fff;
-      border-radius: var(--radius-md);
-      padding: 20px;
-      border: 1px solid #eceff1;
-      font-size: 15px;
-    }
-
-    /* CTA */
-    .cta-banner {
-      background: var(--bg-dark);
-      color: #fff;
-      padding: 60px 30px;
-      border-radius: var(--radius-lg);
-      text-align: center;
     }
 
     /* FOOTER */
     footer {
       background: #11171b;
-      padding: 40px 0;
       color: #b0bec5;
+      padding: 40px 0 20px;
+      margin-top: 60px;
       text-align: center;
       font-size: 14px;
-      margin-top: 60px;
     }
-
   </style>
 </head>
 
-
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="header-inner">
-    <div class="logo">Seattle Painting Pros</div>
-    <nav class="nav">
-      <a href="#services">Services</a>
-      <a href="#process">Our Process</a>
-      <a href="#gallery">Projects</a>
-      <a href="#contact" class="nav-cta">Free Estimate</a>
-    </nav>
-  </div>
-</header>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">SEATTLE PAINTING EXPERTS</div>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#gallery">Projects</a>
+        <a href="#contact" class="nav-cta">Free Estimate</a>
+      </nav>
+    </div>
+  </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap hero-grid">
-    
-    <div>
-      <h1 class="hero-title">Seattle’s Most Trusted House Painters</h1>
-      <p class="hero-sub">
-        We don’t just “paint walls.”  
-        We transform homes with detail-driven prep work, clean lines, premium paints, and a team that treats your home like family.
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 class="hero-title">Seattle’s Most Trusted Interior & Exterior Painting Team</h1>
+        <p class="hero-sub">
+          We don’t just paint — we elevate your home with clean prep, smooth finishes, straight lines, and premium materials built for Seattle weather.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="tel:+12065550199" class="btn btn-primary">📞 Call (206) 555-0199</a>
+          <a href="#contact" class="btn btn-outline">Get a Free Estimate</a>
+        </div>
+
+        <div class="trust-strip">
+          <div><strong>850+</strong><br>Completed Projects</div>
+          <div><strong>12+</strong><br>Years Experience</div>
+          <div><strong>5.0★</strong><br>Customer Rated</div>
+          <div><strong>100%</strong><br>Quality Guarantee</div>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <img src="/images/painter-hero.jpg" alt="Seattle painting project">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <h2>Painting Services Designed for Modern Seattle Homes</h2>
+      <p class="section-sub">
+        Whether you’re refreshing interiors or upgrading curb appeal, we deliver premium finishes,
+        clean prep, and long-lasting results — every time.
       </p>
 
-      <div class="hero-ctas">
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-title">Exterior Painting</div>
+          <div class="card-sub">Weather-proof, durable, and beautifully finished.</div>
+          <ul>
+            <li>Full home prep: wash, scrape, sand</li>
+            <li>Premium weather-resistant coatings</li>
+            <li>Siding, trim, fascia & doors</li>
+            <li>Color guidance included</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Interior Painting</div>
+          <div class="card-sub">Beautiful, clean interiors with no mess or disruption.</div>
+          <ul>
+            <li>Furniture & floor protection</li>
+            <li>Walls, ceilings, trim & doors</li>
+            <li>Smooth, even finishes</li>
+            <li>Fast, friendly, professional crew</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Cabinet Refinishing</div>
+          <div class="card-sub">A factory-smooth sprayed finish that transforms your kitchen.</div>
+          <ul>
+            <li>Degrease, sand & prime correctly</li>
+            <li>Sprayed high-grade coatings</li>
+            <li>No brush or roller marks</li>
+            <li>Hardware removal & reinstall</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section section-bg" id="process">
+    <div class="wrap">
+      <h2>Our Proven Painting Process</h2>
+      <p class="section-sub">A clean, organized system designed to give homeowners peace of mind from start to finish.</p>
+
+      <div class="process-list">
+        <div class="process-step"><strong>1. Consultation</strong><br>We walk the project, understand your goals, and provide a clear, itemized estimate.</div>
+        <div class="process-step"><strong>2. Color Selection</strong><br>We help finalize colors that match your home, lighting, and vision.</div>
+        <div class="process-step"><strong>3. Prep & Protection</strong><br>Floors, furniture, landscaping — everything gets covered and secured.</div>
+        <div class="process-step"><strong>4. Precision Painting</strong><br>Even coats, crisp lines, and expert craftsmanship.</div>
+        <div class="process-step"><strong>5. Detailing</strong><br>Touch-ups, cleanup, and quality checks on every surface.</div>
+        <div class="process-step"><strong>6. Final Walkthrough</strong><br>You approve everything before the job is called complete.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <div class="wrap">
+      <h2>Recent Transformations</h2>
+      <p class="section-sub">
+        A look at our interior updates, exterior repaints, and cabinet refinishing projects across Seattle, Bellevue, and Everett.
+      </p>
+
+      <div class="gallery-grid">
+        <img src="/images/gallery1.jpg" alt="Interior painting project">
+        <img src="/images/gallery2.jpg" alt="Exterior house painting">
+        <img src="/images/gallery3.jpg" alt="Kitchen cabinet refinishing">
+        <img src="/images/gallery4.jpg" alt="Living room painting">
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-bg">
+    <div class="wrap">
+      <h2>What Homeowners Love About Working With Us</h2>
+      <p class="section-sub">Clean work, clear communication, and craftsmanship that shows.</p>
+
+      <div class="testimonial-grid">
+        <div class="testimonial">★★★★★  
+          <p>“The team was professional from start to finish. Our home looks entirely refreshed — easily the best painters we’ve worked with.”</p>
+          <strong>Sarah M.</strong><br><small>Seattle, WA</small>
+        </div>
+
+        <div class="testimonial">★★★★★  
+          <p>“Our cabinets look like they came straight from the factory. Zero brush marks. Huge transformation.”</p>
+          <strong>Daniel P.</strong><br><small>Bellevue, WA</small>
+        </div>
+
+        <div class="testimonial">★★★★★  
+          <p>“Fast, clean, and the results were flawless. You can tell they truly care about the final product.”</p>
+          <strong>Laura G.</strong><br><small>Redmond, WA</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-banner" style="text-align:center;">
+        <h2>Ready to Refresh Your Home?</h2>
+        <p>Get a fast, accurate estimate with no pressure and no surprises. Just honest pricing and beautiful results.</p>
         <a href="tel:+12065550199" class="btn btn-primary">📞 Call (206) 555-0199</a>
-        <a href="#contact" class="btn btn-outline">Request Your Free Estimate</a>
-      </div>
-
-      <div class="trust-strip">
-        <div class="trust-item"><strong>850+</strong><br>Completed Projects</div>
-        <div class="trust-item"><strong>12</strong><br>Years Experience</div>
-        <div class="trust-item"><strong>5.0★</strong><br>Google Rated</div>
-        <div class="trust-item"><strong>100%</strong><br>Satisfaction</div>
       </div>
     </div>
+  </section>
 
-    <div>
-      <img src="/images/hero-painting.jpg" alt="Seattle home painting project">
-    </div>
+  <!-- CONTACT -->
+  <section class="section section-bg" id="contact">
+    <div class="wrap grid-2">
+      <div>
+        <h2>Get Your Free Painting Estimate</h2>
+        <p class="section-sub">Tell us about your project and we’ll reach out in 10–15 minutes.</p>
 
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="section" id="services">
-  <div class="wrap">
-    <h2 class="section-title">Painting Services That Elevate Your Home</h2>
-    <p class="section-sub">From luxury interiors to full exterior transformations — everything we do begins with preparation, precision, and professionalism.</p>
-
-    <div class="grid-3">
-
-      <div class="card">
-        <div class="card-title">Exterior Painting</div>
-        <div class="card-sub">Protect your home from Seattle’s weather while boosting curb appeal.</div>
-        <ul>
-          <li>Deep prep: scraping, sanding & washing</li>
-          <li>Premium weatherproof coatings</li>
-          <li>Siding, trim & fascia</li>
-          <li>Color consulting available</li>
+        <ul style="font-size:14px; color:var(--text-muted); padding-left:18px; list-style:disc;">
+          <li>No pushy sales tactics</li>
+          <li>Clear, transparent pricing</li>
+          <li>Friendly, fast communication</li>
         </ul>
       </div>
 
-      <div class="card">
-        <div class="card-title">Interior Painting</div>
-        <div class="card-sub">Clean lines. Smooth finishes. Zero mess.</div>
-        <ul>
-          <li>Furniture & floor protection</li>
-          <li>Walls, ceilings, trim & doors</li>
-          <li>Modern color updates</li>
-          <li>Fast, clean & professional</li>
-        </ul>
-      </div>
+      <form class="lead-form" action="/submit" method="post">
+        <div class="form-group"><label>Name</label><input type="text" required></div>
+        <div class="form-group"><label>Phone</label><input type="tel" required></div>
+        <div class="form-group"><label>Email</label><input type="email"></div>
 
-      <div class="card">
-        <div class="card-title">Cabinet Refinishing</div>
-        <div class="card-sub">A full kitchen refresh — without a full remodel.</div>
-        <ul>
-          <li>Degrease + prep</li>
-          <li>Sprayed, factory-grade finish</li>
-          <li>No brush marks</li>
-          <li>Durable hardening coatings</li>
-        </ul>
-      </div>
+        <div class="form-group">
+          <label>Service</label>
+          <select>
+            <option>Exterior Painting</option>
+            <option>Interior Painting</option>
+            <option>Cabinet Refinishing</option>
+            <option>Other</option>
+          </select>
+        </div>
 
+        <div class="form-group">
+          <label>Project Details</label>
+          <textarea></textarea>
+        </div>
+
+        <button class="btn btn-primary" style="width:100%;">Get My Free Estimate</button>
+      </form>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PROCESS -->
-<section class="section section-bg" id="process">
-  <div class="wrap">
-    <h2 class="section-title">Our Painting Process</h2>
-    <p class="section-sub">A structured, clean, and professional approach homeowners love.</p>
-
-    <div class="process-list">
-      <div class="process-step"><strong>1. On-Site Consultation</strong><br>We walk the home, understand your vision, and outline everything clearly.</div>
-      <div class="process-step"><strong>2. Color Planning</strong><br>We help finalize colors that match your style and lighting.</div>
-      <div class="process-step"><strong>3. Prep & Protection</strong><br>Floors covered, furniture protected, and surfaces perfected.</div>
-      <div class="process-step"><strong>4. Premium Painting</strong><br>Even coats, clean lines, and high-end paints for lasting results.</div>
-      <div class="process-step"><strong>5. Detail Finishing</strong><br>Touchups, edges, and checks — nothing is rushed.</div>
-      <div class="process-step"><strong>6. Final Walkthrough</strong><br>We review everything together before calling the job complete.</div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <p>© 2025 Seattle Painting Experts. Licensed, Bonded & Insured.</p>
+      <p>Serving Seattle, Bellevue, Everett & surrounding areas.</p>
     </div>
-
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section class="section" id="gallery">
-  <div class="wrap">
-    <h2 class="section-title">Recent Transformations</h2>
-    <p class="section-sub">A small sample of the homes we've refreshed across Seattle, Bellevue, and Everett.</p>
-
-    <div class="gallery-grid">
-      <img src="/images/gallery1.jpg" alt="Living room painting">
-      <img src="/images/gallery2.jpg" alt="Exterior siding repaint">
-      <img src="/images/gallery3.jpg" alt="Kitchen cabinet refinishing">
-      <img src="/images/gallery4.jpg" alt="Bedroom painting project">
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="section section-bg">
-  <div class="wrap">
-    <h2 class="section-title">Homeowners Love Working With Us</h2>
-    <p class="section-sub">Our reputation is built on communication, cleanliness, and craftsmanship.</p>
-
-    <div class="testimonial-grid">
-
-      <div class="testimonial">
-        ⭐⭐⭐⭐⭐  
-        <p>“The attention to detail was unreal. They transformed our entire main floor — no mess, no stress.”</p>
-        <strong>— Sarah M.</strong><br><small>West Seattle</small>
-      </div>
-
-      <div class="testimonial">
-        ⭐⭐⭐⭐⭐  
-        <p>“Our cabinets look like they came from the factory. Seriously one of the best upgrades we’ve done.”</p>
-        <strong>— Daniel P.</strong><br><small>Bellevue</small>
-      </div>
-
-      <div class="testimonial">
-        ⭐⭐⭐⭐⭐  
-        <p>“Professional, fast, and the final results were flawless. Worth every penny.”</p>
-        <strong>— Laura G.</strong><br><small>Redmond</small>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="section">
-  <div class="wrap">
-    <div class="cta-banner">
-      <h2 style="font-family:var(--title-font); font-size:30px;">Ready to Bring New Life to Your Home?</h2>
-      <p style="max-width:600px; margin:0 auto 20px; opacity:0.9;">Get a fast, friendly estimate. No sales pressure — just honest pricing and beautiful results.</p>
-      <a href="tel:+12065550199" class="btn btn-primary">📞 Call (206) 555-0199</a>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="section section-bg" id="contact">
-  <div class="wrap grid-2">
-
-    <div>
-      <h2 class="section-title">Request Your Free Painting Quote</h2>
-      <p class="section-sub">Tell us about your project, and our team will reach out within minutes.</p>
-      <ul style="list-style:disc; padding-left:20px; color:var(--text-muted); font-size:15px;">
-        <li>Fast responses</li>
-        <li>Transparent pricing</li>
-        <li>No-pressure conversation</li>
-      </ul>
-    </div>
-
-    <form class="lead-form" action="/submit" method="post">
-      <div class="lead-form-title">Tell Us About Your Project</div>
-      <div class="lead-form-sub">We'll call or text you shortly.</div>
-
-      <div class="form-group">
-        <label>Name</label>
-        <input type="text" required>
-      </div>
-
-      <div class="form-group">
-        <label>Phone</label>
-        <input type="tel" required>
-      </div>
-
-      <div class="form-group">
-        <label>Email</label>
-        <input type="email">
-      </div>
-
-      <div class="form-group">
-        <label>What do you need?</label>
-        <select>
-          <option>Interior Painting</option>
-          <option>Exterior Painting</option>
-          <option>Cabinet Refinishing</option>
-          <option>Full Home Repaint</option>
-          <option>Other</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label>Project Details</label>
-        <textarea></textarea>
-      </div>
-
-      <button class="btn btn-primary" style="width:100%;">Get My Free Estimate</button>
-    </form>
-
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="wrap">
-    © 2025 Seattle Painting Pros — Licensed, Bonded & Insured<br>
-    Serving Seattle, Bellevue, Everett, Redmond & surrounding areas.
-  </div>
-</footer>
+  </footer>
 
 </body>
 </html>
