@@ -1,395 +1,1069 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everett Pro Painting | Everett's Trusted Interior & Exterior Painting</title>
+    <meta name="description" content="Everett's trusted interior & exterior painting experts. Clean prep, smooth finishes, premium materials, and long-lasting results. Free estimates.">
+    <link rel="canonical" href="https://everettpropainting.com">
 
-  <title>Evergreen Pro Painting | Everett’s Trusted Painting Contractors</title>
-  <meta name="description" content="Evergreen Pro Painting provides high-quality interior, exterior, and cabinet painting in Everett, WA. Licensed, bonded, & insured. Get a free, no-pressure painting estimate today.">
-  <link rel="canonical" href="https://www.evergreenpropainting.com">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Local SEO -->
+    <meta name="geo.region" content="US-WA">
+    <meta name="geo.placename" content="Everett">
+    <meta name="geo.position" content="47.9780;-122.2020">
+    <meta name="ICBM" content="47.9780, -122.2020">
 
-  <!-- Local SEO -->
-  <meta name="geo.region" content="US-WA">
-  <meta name="geo.placename" content="Everett">
-  <meta name="geo.position" content="47.978984;-122.202079">
-  <meta name="ICBM" content="47.978984, -122.202079">
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Contractor",
+        "name": "Everett Pro Painting",
+        "image": "/images/painting-hero.jpg",
+        "telephone": "+12061112222",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Everett",
+            "addressRegion": "WA",
+            "addressCountry": "US"
+        },
+        "url": "https://everettpropainting.com",
+        "areaServed": ["Everett", "Seattle", "Lynnwood"]
+    }
+    </script>
 
-  <!-- Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Contractor",
-    "name": "Evergreen Pro Painting",
-    "image": "https://via.placeholder.com/1200x800",
-    "telephone": "2061112222",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Everett",
-      "addressRegion": "WA",
-      "addressCountry": "US"
-    },
-    "url": "https://www.evergreenpropainting.com",
-    "areaServed": ["Everett", "Marysville", "Mukilteo"]
-  }
-  </script>
+    <style>
+        :root {
+            /* BRANDING – change per client/industry */
+            --primary: #d63031;
+            --primary-dark: #c92a2a;
+            --accent: #4abbcb;
+            --bg-dark: #1e272e;
+            --bg-soft: #f8f9fa;
+            --text-main: #2d3436;
+            --text-muted: #636e72;
+            --radius-md: 10px;
+            --radius-lg: 14px;
+            --shadow-soft: 0 4px 20px rgba(0,0,0,0.06);
+            --shadow-hover: 0 12px 30px rgba(0,0,0,0.12);
+            --title-font: 'Montserrat', sans-serif;
+            --body-font: 'Open Sans', sans-serif;
+            --max-width: 1200px;
+        }
 
-  <style>
-    /* (THE ENTIRE CSS YOU PROVIDED REMAINS 100% UNCHANGED) */
-    /* I’m not repeating it here in this explanation — but in your output it stays exactly as given. */
-  </style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--body-font);
+            color: var(--text-main);
+            line-height: 1.6;
+            background: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Layout helpers */
+        .wrap {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-sm {
+            padding: 50px 0;
+        }
+
+        .section-bg {
+            background: var(--bg-soft);
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 50px;
+            align-items: center;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 30px;
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.2);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        /* Header */
+        .header {
+            background: #fff;
+            border-bottom: 1px solid #eceff1;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .header-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        .logo {
+            font-family: var(--title-font);
+            font-weight: 800;
+            font-size: 22px;
+            letter-spacing: -0.04em;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .nav a {
+            color: var(--text-main);
+            position: relative;
+        }
+
+        .nav a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.2s;
+        }
+
+        .nav a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            padding: 10px 18px;
+            border-radius: 999px;
+            background: var(--primary);
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .nav-cta:hover {
+            background: var(--primary-dark);
+        }
+
+        /* Hero */
+        .hero {
+            background: radial-gradient(circle at top left, #3e4a52, #1e272e 60%);
+            color: #fff;
+            padding: 90px 0 70px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-kicker {
+            margin-bottom: 12px;
+            opacity: 0.85;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+        }
+
+        .hero-title {
+            font-family: var(--title-font);
+            font-size: 42px;
+            line-height: 1.15;
+            letter-spacing: -0.04em;
+            margin-bottom: 18px;
+        }
+
+        .hero-sub {
+            font-size: 17px;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 18px;
+        }
+
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 26px;
+        }
+
+        .hero-badge {
+            background: rgba(0,0,0,0.32);
+            border-radius: 999px;
+            padding: 6px 14px;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .hero-badge span.icon {
+            font-size: 14px;
+        }
+
+        .hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 14px 26px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.18s ease-out;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: #fff;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 14px 30px rgba(0,0,0,0.45);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.4);
+        }
+
+        .btn-outline:hover {
+            background: #fff;
+            color: var(--bg-dark);
+        }
+
+        .hero-note {
+            font-size: 13px;
+            opacity: 0.8;
+        }
+
+        .hero-media {
+            background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(255,255,255,0.18);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            overflow: hidden;
+            min-height: 260px;
+            position: relative;
+        }
+
+        .hero-media img, .hero-media video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Stats / Trust */
+        .trust-strip {
+            background: #fff;
+            box-shadow: var(--shadow-soft);
+            border-radius: var(--radius-md);
+            padding: 16px 22px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 22px;
+        }
+
+        .trust-item {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            font-size: 13px;
+        }
+
+        .trust-label {
+            opacity: 0.7;
+        }
+
+        .trust-value {
+            font-weight: 700;
+        }
+
+        /* Section titles */
+        .section-header {
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        .section-eyebrow {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .section-title {
+            font-family: var(--title-font);
+            font-size: 30px;
+            letter-spacing: -0.04em;
+            margin-bottom: 10px;
+        }
+
+        .section-sub {
+            font-size: 15px;
+            color: var(--text-muted);
+        }
+
+        /* Service cards */
+        .card {
+            background: #fff;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-soft);
+            padding: 26px 22px;
+            transition: all 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .card-title {
+            font-family: var(--title-font);
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
+
+        .card-sub {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+        }
+
+        .card ul {
+            list-style: none;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        .card ul li {
+            padding: 6px 0;
+            border-bottom: 1px solid #edf0f2;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card ul li span.bullet {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* Process list */
+        .process-list {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .process-step {
+            background: #fff;
+            border-radius: var(--radius-md);
+            padding: 18px 16px;
+            border: 1px solid #eceff1;
+        }
+
+        .process-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            border-radius: 999px;
+            background: var(--primary);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .process-title {
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .process-text {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 8px;
+        }
+
+        .gallery-item {
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .gallery-item::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.45), transparent 50%);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+
+        /* Testimonials */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .testimonial {
+            background: #fff;
+            border-radius: var(--radius-md);
+            padding: 20px 18px;
+            border: 1px solid #eceff1;
+            font-size: 14px;
+        }
+
+        .testimonial-stars {
+            color: #f1c40f;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        .testimonial-name {
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .testimonial-meta {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* CTA banner */
+        .cta-banner {
+            background: var(--bg-dark);
+            color: #fff;
+            text-align: center;
+            padding: 60px 24px;
+            border-radius: var(--radius-lg);
+        }
+
+        .cta-banner h2 {
+            font-family: var(--title-font);
+            font-size: 28px;
+            margin-bottom: 10px;
+            letter-spacing: -0.03em;
+        }
+
+        .cta-banner p {
+            font-size: 15px;
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 22px;
+        }
+
+        /* Lead form */
+        .lead-form {
+            background: #fff;
+            border-radius: var(--radius-lg);
+            padding: 26px 22px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid #eceff1;
+        }
+
+        .lead-form-title {
+            font-family: var(--title-font);
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .lead-form-sub {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 18px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            font-size: 13px;
+        }
+
+        .form-group label {
+            font-weight: 600;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            padding: 10px 10px;
+            border-radius: 8px;
+            border: 1px solid #dfe4ea;
+            font-family: inherit;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+
+        .form-note {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Footer */
+        footer {
+            background: #11171b;
+            color: #b0bec5;
+            padding: 40px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 26px;
+        }
+
+        footer h4 {
+            color: #fff;
+            font-family: var(--title-font);
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            font-size: 13px;
+            color: #b0bec5;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        footer a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(176,190,197,0.2);
+            padding-top: 14px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        /* Mobile sticky call */
+        .floating-call {
+            position: fixed;
+            bottom: 14px;
+            right: 14px;
+            left: 14px;
+            margin: 0 auto;
+            max-width: 360px;
+            background: var(--primary);
+            color: #fff;
+            padding: 12px 18px;
+            border-radius: 999px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 15px;
+            box-shadow: 0 16px 36px rgba(0,0,0,0.4);
+            z-index: 40;
+            display: none; /* show on mobile */
+        }
+
+        .floating-call span {
+            margin-right: 6px;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .grid-2 {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .grid-3, .process-list, .testimonial-grid, .gallery-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .nav {
+                display: none; /* you can add a mobile menu later */
+            }
+        }
+
+        @media (max-width: 640px) {
+            .section {
+                padding: 60px 0;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .testimonial-grid, .process-list {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .form-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .hero-title {
+                font-size: 32px;
+            }
+
+            .floating-call {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header-inner">
-      <div class="logo">EVERGREEN</div>
-      <nav class="nav">
-        <a href="#services">Services</a>
-        <a href="#process">How It Works</a>
-        <a href="#gallery">Our Work</a>
-        <a href="#contact" class="nav-cta">Free Estimate</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="hero-kicker">Everett • Painting Contractors</div>
-        <h1 class="hero-title">Top-Rated Painting Services for Homes & Businesses</h1>
-        <p class="hero-sub">Professional interior, exterior, and cabinet painting with industry-leading prep and long-lasting finishes.</p>
-
-        <div class="hero-badges">
-          <div class="hero-badge">
-            <span class="icon">⭐</span>
-            <span>4.9 Google Rating</span>
-          </div>
-          <div class="hero-badge">
-            <span class="icon">✅</span>
-            <span>Licensed • Bonded • Insured</span>
-          </div>
-          <div class="hero-badge">
-            <span class="icon">📍</span>
-            <span>Serving Everett & Surrounding Areas</span>
-          </div>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">Everett Pro Painting</div>
+            <nav class="nav">
+                <a href="#services">Services</a>
+                <a href="#process">How It Works</a>
+                <a href="#gallery">Our Work</a>
+                <a href="#contact" class="nav-cta">Free Estimate</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="hero-ctas">
-          <a href="tel:2061112222" class="btn btn-primary">
-            <span>📞 Call 206-111-2222</span>
-          </a>
-          <a href="#contact" class="btn btn-outline">
-            Get a Free Estimate
-          </a>
-        </div>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="wrap hero-grid">
+            <div>
+                <div class="hero-kicker">Everett • Interior & Exterior Painting</div>
+                <h1 class="hero-title">Premium Painting That Lasts</h1>
+                <p class="hero-sub">Professional interior & exterior painting with meticulous prep, smooth finishes, and results you'll love for years.</p>
 
-        <p class="hero-note">Most projects start within 5–7 days. No-pressure consultations.</p>
+                <div class="hero-badges">
+                    <div class="hero-badge">
+                        <span class="icon">⭐</span>
+                        <span>5.0 Google Rating</span>
+                    </div>
+                    <div class="hero-badge">
+                        <span class="icon">✅</span>
+                        <span>Licensed • Bonded • Insured</span>
+                    </div>
+                    <div class="hero-badge">
+                        <span class="icon">📍</span>
+                        <span>Serving Everett, Seattle & Lynnwood</span>
+                    </div>
+                </div>
 
-        <div class="trust-strip">
-          <div class="trust-item">
-            <span class="trust-label">Projects Completed</span>
-            <span class="trust-value">1,250+</span>
-          </div>
-          <div class="trust-item">
-            <span class="trust-label">Years of Experience</span>
-            <span class="trust-value">12+</span>
-          </div>
-          <div class="trust-item">
-            <span class="trust-label">Satisfaction Rate</span>
-            <span class="trust-value">98%</span>
-          </div>
-          <div class="trust-item">
-            <span class="trust-label">Average Review</span>
-            <span class="trust-value">4.9 ★</span>
-          </div>
-        </div>
-      </div>
+                <div class="hero-ctas">
+                    <a href="tel:+12061112222" class="btn btn-primary">
+                        <span>📞 Call (206) 111-2222</span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Get a Free Estimate
+                    </a>
+                </div>
 
-      <div class="hero-media">
-        <img src="https://via.placeholder.com/1200x800" alt="Evergreen Pro Painting project photo" loading="lazy">
-      </div>
-    </div>
-  </section>
+                <p class="hero-note">Most projects scheduled within 5–7 days. No-pressure consultations.</p>
 
-  <!-- SERVICES -->
-  <section class="section" id="services">
-    <div class="wrap">
-      <div class="section-header">
-        <div class="section-eyebrow">Services</div>
-        <h2 class="section-title">Professional Painting Services</h2>
-        <p class="section-sub">High-quality craftsmanship, detailed prep, and flawless results.</p>
-      </div>
-
-      <div class="grid-3">
-        <!-- Service 1 -->
-        <div class="card">
-          <div class="card-title">Interior Painting</div>
-          <div class="card-sub">Refresh your living spaces with smooth, clean, modern finishes.</div>
-          <ul>
-            <li><span class="bullet">•</span>Walls, ceilings & trim</li>
-            <li><span class="bullet">•</span>Accent walls</li>
-            <li><span class="bullet">•</span>Drywall repair</li>
-            <li><span class="bullet">•</span>Premium zero-VOC paints</li>
-          </ul>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="card">
-          <div class="card-title">Exterior Painting</div>
-          <div class="card-sub">Protect and modernize your home’s exterior with durable coatings.</div>
-          <ul>
-            <li><span class="bullet">•</span>Pressure washing & prep</li>
-            <li><span class="bullet">•</span>Siding, trim & doors</li>
-            <li><span class="bullet">•</span>Caulking & repairs</li>
-            <li><span class="bullet">•</span>Weather-resistant finishes</li>
-          </ul>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="card">
-          <div class="card-title">Cabinet Refinishing</div>
-          <div class="card-sub">A beautiful factory-smooth finish without replacing your cabinets.</div>
-          <ul>
-            <li><span class="bullet">•</span>Cleaning & degreasing</li>
-            <li><span class="bullet">•</span>Sanding & priming</li>
-            <li><span class="bullet">•</span>Spray-grade coatings</li>
-            <li><span class="bullet">•</span>Durable enamel finishes</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section class="section section-bg" id="process">
-    <div class="wrap">
-      <div class="section-header">
-        <div class="section-eyebrow">Process</div>
-        <h2 class="section-title">How Our Painting Process Works</h2>
-        <p class="section-sub">A smooth, organized, transparent experience from start to finish.</p>
-      </div>
-
-      <div class="process-list">
-        <div class="process-step">
-          <div class="process-badge">1</div>
-          <div class="process-title">Free Consultation</div>
-          <div class="process-text">We review your project, answer questions, and provide expert recommendations.</div>
-        </div>
-        <div class="process-step">
-          <div class="process-badge">2</div>
-          <div class="process-title">Detailed Estimate</div>
-          <div class="process-text">Clear scope, pricing, and timeline with no hidden fees.</div>
-        </div>
-        <div class="process-step">
-          <div class="process-badge">3</div>
-          <div class="process-title">Prep Work</div>
-          <div class="process-text">Sanding, patching, caulking, masking, and surface cleaning.</div>
-        </div>
-        <div class="process-step">
-          <div class="process-badge">4</div>
-          <div class="process-title">Painting</div>
-          <div class="process-text">Premium paints applied with precision for a long-lasting finish.</div>
-        </div>
-        <div class="process-step">
-          <div class="process-badge">5</div>
-          <div class="process-title">Clean Up</div>
-          <div class="process-text">Your home is left spotless — like we were never there.</div>
-        </div>
-        <div class="process-step">
-          <div class="process-badge">6</div>
-          <div class="process-title">Final Walkthrough</div>
-          <div class="process-text">We ensure every detail meets your expectations before we leave.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section class="section" id="gallery">
-    <div class="wrap">
-      <div class="section-header">
-        <div class="section-eyebrow">Our Work</div>
-        <h2 class="section-title">Recent Painting Projects</h2>
-        <p class="section-sub">Before-and-after transformations across Everett & surrounding areas.</p>
-      </div>
-
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="https://via.placeholder.com/800x600" alt="Interior painting project" loading="lazy">
-        </div>
-        <div class="gallery-item">
-          <img src="https://via.placeholder.com/800x600" alt="Exterior home painting" loading="lazy">
-        </div>
-        <div class="gallery-item">
-          <img src="https://via.placeholder.com/800x600" alt="Cabinet refinishing example" loading="lazy">
-        </div>
-        <div class="gallery-item">
-          <img src="https://via.placeholder.com/800x600" alt="Living room repaint" loading="lazy">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="section section-bg">
-    <div class="wrap">
-      <div class="section-header">
-        <div class="section-eyebrow">Reviews</div>
-        <h2 class="section-title">What Homeowners Are Saying</h2>
-        <p class="section-sub">Trusted by families all across Everett.</p>
-      </div>
-
-      <div class="testimonial-grid">
-        <div class="testimonial">
-          <div class="testimonial-stars">★★★★★</div>
-          <p>“The team did an incredible job on our interior repaint. Smooth, clean, and super professional.”</p>
-          <div class="testimonial-name">Sarah M.</div>
-          <div class="testimonial-meta">Interior Painting</div>
-        </div>
-
-        <div class="testimonial">
-          <div class="testimonial-stars">★★★★★</div>
-          <p>“Our house looks brand new after the exterior painting. The prep work alone was top-tier.”</p>
-          <div class="testimonial-name">Jason L.</div>
-          <div class="testimonial-meta">Exterior Painting</div>
-        </div>
-
-        <div class="testimonial">
-          <div class="testimonial-stars">★★★★★</div>
-          <p>“They transformed our kitchen cabinets with a flawless factory finish. Highly recommend!”</p>
-          <div class="testimonial-name">Emily R.</div>
-          <div class="testimonial-meta">Cabinet Refinishing</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA BANNER -->
-  <section class="section">
-    <div class="wrap">
-      <div class="cta-banner">
-        <h2>Ready to Transform Your Home?</h2>
-        <p>Get a fast, accurate estimate from Everett’s trusted painting professionals.</p>
-        <a href="tel:2061112222" class="btn btn-primary">📞 Call 206-111-2222</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT FORM -->
-  <section class="section section-bg" id="contact">
-    <div class="wrap grid-2">
-      <div>
-        <div class="section-header">
-          <div class="section-eyebrow">Free Estimate</div>
-          <h2 class="section-title">Request Your Free Painting Quote</h2>
-          <p class="section-sub">Interior, exterior, cabinets — we do it all.</p>
-        </div>
-
-        <ul style="font-size:14px; color:var(--text-muted); list-style:disc; padding-left:18px;">
-          <li>No pushy sales reps</li>
-          <li>Clear, detailed painting quotes</li>
-          <li>Honest recommendations & transparent pricing</li>
-        </ul>
-      </div>
-
-      <div>
-        <form class="lead-form" action="https://www.evergreenpropainting.com/form" method="post">
-          <div class="lead-form-title">Tell us about your project</div>
-          <div class="lead-form-sub">Someone from our team will text or call you within 15 minutes.</div>
-
-          <div class="form-grid">
-            <div class="form-group">
-              <label for="name">Full Name</label>
-              <input id="name" name="name" type="text" placeholder="John Doe" required>
+                <div class="trust-strip">
+                    <div class="trust-item">
+                        <span class="trust-label">Projects Completed</span>
+                        <span class="trust-value">1,200+</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-label">Years of Experience</span>
+                        <span class="trust-value">15+</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-label">Satisfaction Rate</span>
+                        <span class="trust-value">100%</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-label">Average Review</span>
+                        <span class="trust-value">5.0 ★</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-              <label for="phone">Phone</label>
-              <input id="phone" name="phone" type="tel" placeholder="206-111-2222" required>
+            <div class="hero-media">
+                <img src="/images/painting-hero.jpg" alt="Everett Pro Painting project photo" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+        <div class="wrap">
+            <div class="section-header">
+                <div class="section-eyebrow">Services</div>
+                <h2 class="section-title">High-Quality Painting Services for Every Home</h2>
+                <p class="section-sub">Interior, exterior, and cabinet refinishing built on craftsmanship and attention to detail.</p>
             </div>
 
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="you@example.com">
+            <div class="grid-3">
+                <!-- Service 1 -->
+                <div class="card">
+                    <div class="card-title">Exterior Painting</div>
+                    <div class="card-sub">Durable, weather-resistant finishes that boost curb appeal.</div>
+                    <ul>
+                        <li><span class="bullet">•</span>Siding, trim & fascia</li>
+                        <li><span class="bullet">•</span>Full prep: scraping, sanding & washing</li>
+                        <li><span class="bullet">•</span>Premium weather-proof coatings</li>
+                        <li><span class="bullet">•</span>Color consultation included</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="card">
+                    <div class="card-title">Interior Painting</div>
+                    <div class="card-sub">Clean lines, smooth finishes, and a refreshed home interior.</div>
+                    <ul>
+                        <li><span class="bullet">•</span>Walls, ceilings, trim & doors</li>
+                        <li><span class="bullet">•</span>Furniture & floor protection</li>
+                        <li><span class="bullet">•</span>Smooth, even paint application</li>
+                        <li><span class="bullet">•</span>Fast & clean work</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="card">
+                    <div class="card-title">Cabinet Refinishing</div>
+                    <div class="card-sub">Factory-smooth sprayed finishes for kitchens & built-ins.</div>
+                    <ul>
+                        <li><span class="bullet">•</span>Degrease, sand & prime</li>
+                        <li><span class="bullet">•</span>Sprayed high-grade coatings</li>
+                        <li><span class="bullet">•</span>No brush marks</li>
+                        <li><span class="bullet">•</span>Hardware removal & reinstallation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section section-bg" id="process">
+        <div class="wrap">
+            <div class="section-header">
+                <div class="section-eyebrow">Process</div>
+                <h2 class="section-title">Our Proven Painting Process</h2>
+                <p class="section-sub">A clean, organized system that delivers beautiful, long-lasting results.</p>
             </div>
 
-            <div class="form-group">
-              <label for="city">City</label>
-              <input id="city" name="city" type="text" placeholder="Everett or nearby">
+            <div class="process-list">
+                <div class="process-step">
+                    <div class="process-badge">1</div>
+                    <div class="process-title">Consultation & Quote</div>
+                    <div class="process-text">We walk the space, understand your goals, and provide a clear, itemized estimate.</div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-badge">2</div>
+                    <div class="process-title">Color Selection</div>
+                    <div class="process-text">We help you choose the perfect colors for your home's lighting & style.</div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-badge">3</div>
+                    <div class="process-title">Prep & Protection</div>
+                    <div class="process-text">Floors, furniture, landscaping — everything gets covered and protected.</div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-badge">4</div>
+                    <div class="process-title">Premium Painting</div>
+                    <div class="process-text">Smooth coats, straight lines, and craftsmanship that stands out.</div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-badge">5</div>
+                    <div class="process-title">Touch-ups & Detailing</div>
+                    <div class="process-text">We inspect every surface and perfect the details.</div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-badge">6</div>
+                    <div class="process-title">Final Walkthrough</div>
+                    <div class="process-text">You approve everything before we call the project complete.</div>
+                </div>
             </div>
-          </div>
-
-          <div class="form-group">
-            <label for="service">What do you need help with?</label>
-            <select id="service" name="service">
-              <option value="">Select a service</option>
-              <option>Interior Painting</option>
-              <option>Exterior Painting</option>
-              <option>Cabinet Refinishing</option>
-              <option>Other / Not sure</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="details">Project Details</label>
-            <textarea id="details" name="details" placeholder="Tell us about the space, timeline, and any questions you have."></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary" style="width:100%; margin-top:6px;">Get My Free Estimate</button>
-          <p class="form-note">By submitting, you agree to be contacted by phone, text, or email. Messaging rates may apply.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="wrap">
-      <div class="footer-grid">
-        <div>
-          <h4>Evergreen Pro Painting</h4>
-          <p style="font-size:13px;">Premium interior, exterior, and cabinet painting serving Everett, WA and surrounding areas.</p>
         </div>
+    </section>
 
-        <div>
-          <h4>Services</h4>
-          <a href="#services">Interior Painting</a>
-          <a href="#services">Exterior Painting</a>
-          <a href="#services">Cabinet Refinishing</a>
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+        <div class="wrap">
+            <div class="section-header">
+                <div class="section-eyebrow">Our Work</div>
+                <h2 class="section-title">Recent Projects</h2>
+                <p class="section-sub">A look at our latest exterior repaints, interior transformations, and cabinet refinishing work.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/images/gallery1.jpg" alt="Exterior painting project in Everett" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/gallery2.jpg" alt="Interior painting project" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/gallery3.jpg" alt="Kitchen cabinet refinishing" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/gallery4.jpg" alt="Trim & detail work" loading="lazy">
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div>
-          <h4>Contact</h4>
-          <p style="font-size:13px;">Phone: 206-111-2222</p>
-          <p style="font-size:13px;">Email: info@evergreenpropainting.com</p>
-          <p style="font-size:13px;">Hours: Mon–Sat: 8am–6pm</p>
+    <!-- TESTIMONIALS -->
+    <section class="section section-bg">
+        <div class="wrap">
+            <div class="section-header">
+                <div class="section-eyebrow">Reviews</div>
+                <h2 class="section-title">What Customers Are Saying</h2>
+                <p class="section-sub">Real homeowners. Real experiences. Real quality.</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"The best painting experience we've ever had — flawless work!"</p>
+                    <div class="testimonial-name">Sarah M.</div>
+                    <div class="testimonial-meta">Everett • Interior + Exterior</div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Our cabinets look brand new. Zero brush marks!"</p>
+                    <div class="testimonial-name">Daniel P.</div>
+                    <div class="testimonial-meta">Seattle • Cabinet Refinishing</div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p>"Clean, fast and super professional. Highly recommend."</p>
+                    <div class="testimonial-name">Laura G.</div>
+                    <div class="testimonial-meta">Lynnwood • Interior Painting</div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div>
-          <h4>Areas We Serve</h4>
-          <p style="font-size:13px;">Everett</p>
-          <p style="font-size:13px;">Marysville</p>
-          <p style="font-size:13px;">Mukilteo</p>
+    <!-- CTA BANNER -->
+    <section class="section">
+        <div class="wrap">
+            <div class="cta-banner">
+                <h2>Ready to Transform Your Home?</h2>
+                <p>Fast estimates, premium finishes, and a stress-free painting experience.</p>
+                <a href="tel:+12061112222" class="btn btn-primary">📞 Call (206) 111-2222</a>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="footer-bottom">
-        &copy; 2025 Evergreen Pro Painting. All rights reserved.
-      </div>
-    </div>
-  </footer>
+    <!-- CONTACT / LEAD FORM -->
+    <section class="section section-bg" id="contact">
+        <div class="wrap grid-2">
+            <div>
+                <div class="section-header">
+                    <div class="section-eyebrow">Free Estimate</div>
+                    <h2 class="section-title">Get Your Free Painting Estimate</h2>
+                    <p class="section-sub">Tell us about your project — we'll get back to you within 10–15 minutes.</p>
+                </div>
+                <ul style="font-size:14px; color:var(--text-muted); list-style:disc; padding-left:18px;">
+                    <li>No pushy sales reps</li>
+                    <li>Clear, detailed quotes</li>
+                    <li>Honest recommendations based on your home & budget</li>
+                </ul>
+            </div>
 
-  <!-- Mobile floating call button -->
-  <a href="tel:2061112222" class="floating-call">
-    <span>📞</span> Call 206-111-2222
-  </a>
+            <div>
+                <form class="lead-form" action="/submit" method="post">
+                    <div class="lead-form-title">Tell us about your project</div>
+                    <div class="lead-form-sub">Fill this out and someone from our team will text or call you within 10–15 minutes.</div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input id="name" name="name" type="text" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input id="phone" name="phone" type="tel" placeholder="(206) 111-2222" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="you@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input id="city" name="city" type="text" placeholder="Everett or nearby">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">What do you need help with?</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option>Exterior Painting</option>
+                            <option>Interior Painting</option>
+                            <option>Cabinet Refinishing</option>
+                            <option>Other / Not sure</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details">Project Details</label>
+                        <textarea id="details" name="details" placeholder="Tell us about the space, timeline, and any questions you have."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width:100%; margin-top:6px;">Get My Free Estimate</button>
+
+                    <p class="form-note">By submitting, you agree to be contacted by phone, text, or email. Messaging rates may apply.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <h4>Everett Pro Painting</h4>
+                    <p style="font-size:13px;">Everett's trusted team for interior painting, exterior painting, and cabinet refinishing. Quality workmanship you can count on.</p>
+                </div>
+
+                <div>
+                    <h4>Services</h4>
+                    <a href="#services">Exterior Painting</a>
+                    <a href="#services">Interior Painting</a>
+                    <a href="#services">Cabinet Refinishing</a>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <p style="font-size:13px;">Phone: (206) 111-2222</p>
+                    <p style="font-size:13px;">Email: support@everettpropainting.com</p>
+                    <p style="font-size:13px;">Hours: Mon–Sat 8AM–6PM</p>
+                </div>
+
+                <div>
+                    <h4>Areas We Serve</h4>
+                    <p style="font-size:13px;">Everett, WA</p>
+                    <p style="font-size:13px;">Seattle, WA</p>
+                    <p style="font-size:13px;">Lynnwood, WA</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2025 Everett Pro Painting. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile floating call button -->
+    <a href="tel:+12061112222" class="floating-call">
+        <span>📞</span> Call (206) 111-2222
+    </a>
 
 </body>
 </html>
